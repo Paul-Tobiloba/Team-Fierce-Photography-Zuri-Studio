@@ -9,6 +9,9 @@ body{
     width: 100%;
     height: 100%;
 }
+a{
+    text-decoration: none!important;
+}
 
 h1,h2,h3,h4,h5,h6,p{
     font-family: 'qsregular', sans-serif;
@@ -26,16 +29,24 @@ h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 50px;
 }
 #zuri-prices1{
-    background: url(/Images/girlsmile.png) center center/cover no-repeat;
+    background: url(/Images/pricing1.png) center center/cover no-repeat;
     height: 100vh;
 }
 #zuri-prices2{
-    background: url(/Images/girlfine.png)  center center/cover no-repeat;
+    background: url(/Images/pricing2.png)  center center/cover no-repeat;
     height: 100vh;
 }
 #zuri-prices3{
-    background: url(/Images/girlfine.png) center center/cover no-repeat;
+    background: url(/Images/pricing3.png) center center/cover no-repeat;
     height: 100vh;
+}
+.zuri-prices{
+    position: relative;
+}
+.zuri-badges h2 span{
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
 }
 .btn{
     background-color: black!important;
@@ -51,15 +62,29 @@ h1,h2,h3,h4,h5,h6,p{
 .badge-dark{
     background-color: black!important;
 }
-.zuri-prices{
-    position: relative;
+.container-fluid{
+    text-align:center;
 }
-.zuri-badges h2 span{
-    position: absolute;
-    bottom: 0px;
-    right: 5px;
-      
+section p{
+    font-family: 'qsregular';
+    font-size: 1.2rem;
 }
+section h1, h3, h6{
+    color: white;
+    font-weight: bold;
+    font-family: 'qsbold';
+}
+
+.bg-warning{
+    background-color:  #FF7A00!important;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.contact-us{
+    padding:10px 20px;
+}
+
 @media screen and (max-width:768px){
     
     .zuri-prices{
@@ -69,7 +94,7 @@ h1,h2,h3,h4,h5,h6,p{
     }
     
 }
-/* ordering of divs in mobile view*/
+/* Ordering of divs in mobile view*/
 @media screen and (max-width:576px){
     #zuri-prices1{
         order: 1;
@@ -89,13 +114,22 @@ h1,h2,h3,h4,h5,h6,p{
     #btnthree{
         order: 6;
     }
-    .badge{
-        margin-right: 30px;
-    }
-
+    
     .btn{
         margin-left: 150px;
     }
+    .contact-us{
+        font-size: 10px;
+    }
 }
-
+@media screen and (max-width:320px){
+ 
+    .btn{
+        margin-left: 50px;
+    }
+    .contact-us{
+        font-size: 8px;
+    }
+    
+}
     
